@@ -22,6 +22,7 @@ const NavBar = () => {
                 </button>
             </div>
             <div className="hidden md:flex col-span-8 space-between justify-between">
+                {/* Change this to a for loop so it's a bit cleaner */}
                 <NavBarButton text="ABOUT"></NavBarButton>
                 <NavBarButton text="EXPERIENCE"></NavBarButton>
                 <NavBarButton text="PROJECTS"></NavBarButton>
@@ -30,7 +31,13 @@ const NavBar = () => {
             </div>
         </div>
         {menuOpen &&
-        <div>this is the menu</div>
+        <div className="flex-col">
+            <MobileMenuButton text="ABOUT"></MobileMenuButton>
+            <MobileMenuButton text="EXPERIENCE"></MobileMenuButton>
+            <MobileMenuButton text="PROJECTS"></MobileMenuButton>
+            <MobileMenuButton text="EDUCATION"></MobileMenuButton>
+            <MobileMenuButton text="CONTACT"></MobileMenuButton>
+        </div>
         }
         </>
     );
@@ -45,6 +52,14 @@ const NavBarButton = ({ text }) => {
             {text}
         </div>
     );
+};
+
+const MobileMenuButton = ({ text }) => {
+    return (
+        <div className="border-black border-b-2 p-2 font-bold justify-center items-center content-center">
+            {text}
+        </div>
+    )
 };
 
 export default NavBar;
