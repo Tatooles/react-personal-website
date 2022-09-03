@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <NavBar />
       <h1 className="text-3xl font-bold underline p-3">
         Hello world!
