@@ -23,13 +23,13 @@ const NavBar = () => {
                     </button>
                 </div>
             </nav>
-            <li className={`${toggle ? "flex-col" : "hidden"} list-none`}>
+            <ul className={`${toggle ? "flex-col" : "hidden"} list-none`}>
                 <MobileMenuButton text="ABOUT"></MobileMenuButton>
                 <MobileMenuButton text="EXPERIENCE"></MobileMenuButton>
                 <MobileMenuButton text="PROJECTS"></MobileMenuButton>
                 <MobileMenuButton text="EDUCATION"></MobileMenuButton>
                 <MobileMenuButton text="CONTACT"></MobileMenuButton>
-            </li>
+            </ul>
         </>
     );
 };
@@ -43,7 +43,7 @@ const NavBarButton = ({ text }: ButtonProps) => {
         <li className={`border-black border-2 p-1 lg:p-2
                       bg-black text-white font-bold shadow-lg text-sm lg:text-lg
                         rounded-lg hover:bg-white hover:text-black
-                        transition-all cursor-pointer ${text == 'CONTACT' ? 'mr-0' : 'lg:mr-8 mr-2'}`}>
+                        transition-all cursor-pointer ${text === 'CONTACT' ? 'mr-0' : 'lg:mr-8 mr-2'}`}>
             <a href="#">{text}</a>
         </li>
     );
