@@ -2,9 +2,9 @@ import kj from "./assets/kj.jpeg"
 
 
 const About = () => (
-    <section className="flex flex-col md:flex-row md:py-16 py-6">
+    <section className="flex flex-col md:flex-row py-6">
         <div className="p-6">
-            <img className="w-[100%] h-[100%] relative" src={kj} alt="Self Portrait" />
+            <img className="w-[100%] h-[100%] relative rounded-md" src={kj} alt="Self Portrait" />
         </div>
 
         <div className="w-[50%] flex flex-col justify-center items-center px-6 sm:px-16">

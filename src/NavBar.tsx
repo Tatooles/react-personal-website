@@ -27,7 +27,7 @@ const NavBar = () => {
 
                 <div className={`md:hidden ${toggle ? 'flex' : 'hidden'}
                                 p-6 bg-black absolute top-20 right-0
-                                mx-4 my-2 min-w-[140px] rounded-xl`}>
+                                mx-4 my-2 min-w-[140px] rounded-xl z-10`}>
                     <ul className="flex flex-1 flex-col items-center list-none">
                         <MobileMenuButton text="ABOUT"></MobileMenuButton>
                         <MobileMenuButton text="EXPERIENCE"></MobileMenuButton>
