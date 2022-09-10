@@ -7,7 +7,7 @@ const About = () => (
             <img className="w-[100%] h-[100%] relative rounded-md" src={kj} alt="Self Portrait" />
         </div>
 
-        <div className="w-[50%] flex flex-col justify-center items-center px-6 sm:px-16">
+        <div className="md:w-[50%] w-full flex flex-col justify-center items-center px-6 sm:px-16">
             <h1 className="text-3xl">
                 About
             </h1>
