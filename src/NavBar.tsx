@@ -4,7 +4,7 @@ const NavBar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className="w-full flex py-6 justify-between items-center navbar bg-[url('assets/IMG_7502_Original.jpg')]">
+        <nav className="w-full flex py-6 justify-between items-center navbar">
             {/* This needs work, need a gap between the name and the buttons */}
             <a href="#" className="font-bold text-xl">KEVIN TATOOLES</a>
 
